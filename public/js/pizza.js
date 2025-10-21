@@ -27,14 +27,21 @@ document.getElementById("pizza-form").onsubmit = () => {
 		isValid = false;
 	}
 
+	// Validate Flavor and Cone Selection
 	let methodButtons = document.getElementsByName("method");
 	let count = 0;
 	for (let i = 0; i < methodButtons.length; i++) {
 		if (methodButtons[i].checked) {
 			count++;
 		}
+
+		if (count === 0) {
+			document.getElementById("err-method").style.display = "block";
+			isValid = false;
+		}
 	}
 
+	// Validate size selection
 	let size = document.getElementById("size").value;
 	if (size === "none") {
 		document.getElementById("err-size").style.display = "block";

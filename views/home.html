@@ -23,9 +23,9 @@
 					"Family-owned pizzeria serving authentic, hand-tossed pizzas with
 					fresh ingredients and a passion for quality since 1974."
 				</p>
-				<a id="contact-button" href="#" role="button">Contact Us</a>
+				<a id="contact-button" href="/contact-us" role="button">Contact Us</a>
 			</header>
-			<form id="pizza-form" action="#" method="get">
+			<form id="pizza-form" action="submit-order" method="post">
 				<!-- Contact Info -->
 				<fieldset>
 					<legend>Contact Info</legend>
@@ -91,8 +91,11 @@
 						<option value="large">Large</option>
 					</select>
 				</fieldset>
+				<label for="comment">Comments:</label>
+				<textarea rows="5" id="comment" name="comment"></textarea>
 				<button type="submit">Place Order</button>
 			</form>
+			<h1>Contact Us</h1>
 		</main>
 	</body>
 </html>
