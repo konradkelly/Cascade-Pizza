@@ -41,7 +41,6 @@ app.post("/submit-order", (req, res) => {
 		size: req.body.size,
 		comment: req.body.comment,
 	};
-	console.log(order);
 
 	orders.push(order);
 	console.log(orders);
