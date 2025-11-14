@@ -26,9 +26,6 @@ const pool = mysql2
 	})
 	.promise();
 
-// Create an array to store orders
-const orders = [];
-
 const PORT = 3000;
 
 // Define a route to test database connection
